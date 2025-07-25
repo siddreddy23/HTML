@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&lt;a&gt; Tag Cheat Sheet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #444;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #333;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    code {
+      background-color: #eef;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    a.example {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a.example:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>&lt;a&gt; Tag Cheat Sheet</h1>
+
+  <table>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+    <tr>
+      <td><code>href</code></td>
+      <td>Specifies the link’s destination (URL or file path).</td>
+      <td><a class="example" href="https://google.com">Visit Google</a></td>
+    </tr>
+    <tr>
+      <td><code>target</code></td>
+      <td>Defines where to open the link. Values: <code>_self</code>, <code>_blank</code>, <code>_parent</code>, <code>_top</code>.</td>
+      <td><a class="example" href="https://google.com" target="_blank">Open in New Tab</a></td>
+    </tr>
+    <tr>
+      <td><code>rel</code></td>
+      <td>Specifies the relationship between current page and linked page. Common values: <code>noopener</code>, <code>noreferrer</code>, <code>nofollow</code>.</td>
+      <td><a class="example" href="https://google.com" target="_blank" rel="noopener">Secure Link</a></td>
+    </tr>
+    <tr>
+      <td><code>download</code></td>
+      <td>Forces download of the target instead of navigating to it.</td>
+      <td><a class="example" href="files/sample.pdf" download>Download PDF</a></td>
+    </tr>
+    <tr>
+      <td><code>type</code></td>
+      <td>Indicates the MIME type of the linked resource.</td>
+      <td><a class="example" href="files/video.mp4" type="video/mp4">Video File</a></td>
+    </tr>
+    <tr>
+      <td><code>hreflang</code></td>
+      <td>Indicates the language of the linked document.</td>
+      <td><a class="example" href="https://example.com/fr" hreflang="fr">French Version</a></td>
+    </tr>
+    <tr>
+      <td><code>ping</code></td>
+      <td>Sends a POST request to URLs listed when the link is clicked (for tracking).</td>
+      <td><a class="example" href="https://example.com" ping="https://tracker.com/log">Tracked Link</a></td>
+    </tr>
+    <tr>
+      <td><code>referrerpolicy</code></td>
+      <td>Controls the <code>Referer</code> header when following the link.</td>
+      <td><a class="example" href="https://example.com" referrerpolicy="no-referrer">No Referrer</a></td>
+    </tr>
+    <tr>
+      <td><code>name</code></td>
+      <td>Creates a bookmark inside the page (use <code>id</code> instead in modern HTML).</td>
+      <td><a name="section1"></a><a class="example" href="#section1">Jump to Section</a></td>
+    </tr>
+    <tr>
+      <td><code>title</code></td>
+      <td>Displays additional info as a tooltip on hover.</td>
+      <td><a class="example" href="https://google.com" title="Go to Google Homepage">Google (hover me)</a></td>
+    </tr>
+  </table>
+</body>
+</html>
