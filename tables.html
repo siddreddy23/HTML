@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table {
+            width:60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th{
+            background-color:plum;
+            color: white;
+        }
+        caption {
+            font-size: 1.5em;
+            margin: 10px;
+            color: darkblue;
+        }
+
+        tbody {
+        background-color: rgb(122, 255, 237);
+        color: #000;
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Schedule</h1>
+    <table>
+        <caption>My Workout Split</caption>
+            <thead>
+             <tr>
+               <th rowspan="2">Day</th>
+               <th colspan="3">Workout Plan</th>
+             </tr>
+             <tr>
+             <th>Exercise</th>
+             <th>Duration</th>
+             <th>Variation</th>
+             </tr>
+            </thead>
+            <tbody>
+             <tr>
+                <td>Monday</td>
+                <td>Running</td>
+                <td>30 minutes</td>
+                <td>Outdoor</td>
+             </tr>
+             <tr>
+                    <td>Tuesday</td>
+                    <td>Yoga</td>
+                    <td>45 minutes</td>
+                    <td>Hatha</td>
+             </tr>
+             <tr>
+                <td>Wednesday</td>
+                <td>Chest</td>
+                <td>1 Hour</td>
+                <td>Gym</td>
+             </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Cycling</td>
+                    <td>40 mins</td>
+                    <td>Outdoor</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Full body</td>
+                    <td>1 Hour</td>
+                    <td>Mixed</td>
+                </tr>      
+            </tbody>
+        </table>
+    
+</body>
+</html>
