@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day7</title>
+</head>
+<!-- Dropdowns, Checkboxes, Textareas, and Input Validation. -->
+<body>
+    <h1>Fill the Form</h1>
+    <form action="submit.html" method="post">
+
+    <label for="Country">Country:</label>
+    <select id="Country" name="Country" required>
+        <option value="">-- Select Country --</option>
+        <option value="INDIA">INDIA</option>
+        <option value="Canada">Canada</option>
+        <option value="Mexico">Mexico</option>
+    </select>
+    <br><br>
+    <p>Select your Skills:</p>
+
+    <input type="checkbox" id="HTML" name="skills" value="HTML">
+    <label for="skill">HTML</label>
+
+    <input type="checkbox" id="CSS" name="skills" value="CSS">
+    <label for="skill">CSS</label>
+
+    <input type="checkbox" id="JavaScript" name="skills" value="JavaScript">
+    <label for="skill">JavaScript</label>
+    <br><br>
+
+    <label for="bio">Your Bio:</label>
+    <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Write something about yourself..." required></textarea>
+    <br><br>
+
+    <label for="pin">Enter 4 digit pin</label>
+    <input type="text" id="pin" name="pin" pattern="\d{4}" required>
+    <br><br>
+    
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button> 
+    </form>
+
+</body>
+</html>
