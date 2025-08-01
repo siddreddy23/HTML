@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidharth Reddy</title>
+</head>
+<!-- Final HTML Mini-Project: "My Portfolio Page"
+You’ll create a simple portfolio with:
+
+Semantic structure
+
+Form
+
+Table
+
+Media
+
+Navigation
+
+Validation
+
+And use of <div> and <span>
+
+ -->
+<body>
+    <header>
+        <h1>Sidharth Reddy</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="About">
+            <h2>About Me</h2>
+            <p>Hi, I'm Sidharth Reddy, a web developer with a passion for creating beautiful and functional websites.</p>
+            <p>I have experience in HTML, CSS, and JavaScript, and I'm always eager to learn new technologies.</p>
+            <p>In my free time, I enjoy exploring new places and capturing moments through photography.</p>
+        </section>
+        <section id="Portfolio">
+            <h2>My Work</h2>
+            <p>Here are some of my recent projects:</p>
+            <ul>
+                <li><a href="project1.html">Project 1</a></li>
+                <li><a href="project2.html">Project 2</a></li>
+                <li><a href="project3.html">Project 3</a></li>
+            </ul>
+            <p>Feel free to check them out and let me know what you think!</p>
+        </section>
+        <section id="Contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, please fill out the form below:</p>
+            <form action="submit.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br><br>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section id="Media">
+            <h2>Media</h2>
+            <p>Check out some of my favorite photos:</p>
+            <img src="photo1.jpg" alt="Photo 1" width="300">
+            <img src="photo2.jpg" alt="Photo 2" width="300">
+            <img src="photo3.jpg" alt="Photo 3" width="300">
+        </section>
+        <section id="Table">
+            <h2>My Skills</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="Validation">
+            <h2>Form Validation</h2>
+            <p>Please fill out the form below to submit your information:</p>
+            <form action="submit.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="DivSpan">
+            <h2>Using <div> and <span></h2>
+            <div>
+                <p>This is a <span style="color: blue;">blue</span> text inside a <span style="font-weight: bold;">bold</span> div.</p>
+                <p>You can use <span style="text-decoration: underline;">underline</span> to emphasize text within a div.</p>
+            </div>
+        </section>
+        <section id="FormsInputs">
+            <h2>Forms and Inputs</h2>
+            <form action="submit.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+                <label for="number">Age:</label>
+                <input type="number" id="number" name="number" min="1" max="80" required>
+                <br><br>
+                <label for="date">Date of Birth:</label>
+                <input type="date" id="date" name="date" required>
+                <br><br>
+                <label for="color">Choose color:</label>
+                <input type="color" id="color" name="color">
+                <br><br>
+                <label for="file">Upload file:</label>
+                <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png">
+                <br><br>
+
+                <label>Profile Status:</label><br>
+
+                <input type="radio" id="student" name="profile" value="student">
+                <label for="student">Student</label><br>
+
+                <input type="radio" id="professional" name="profile" value="professional">
+                <label for="professional">Professional</label><br>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sidharth Reddy. All rights reserved.</p>
+    </footer>    
+    
+</body>
+</html>
